@@ -1,0 +1,521 @@
+﻿body {
+    background-image: url('../Content/ProductImages/guitar.jpg');
+    background-size: cover;
+    background-color: sienna;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: Arial 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(14, 117, 204);
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+html {
+    animation: fadeIn 2s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+}
+h1, h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family:Arial;
+}
+h4 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:aliceblue;
+}
+input[type=checkbox] {
+    vertical-align: unset;
+    
+}
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.large-bold-text { /*text font for product links on home page*/
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+a, a:visited {/* color of links regardless of visited or not*/
+    color: whitesmoke;
+    text-decoration: none;
+}
+a:hover {/*Product Links change color when hovered on*/
+    color: lemonchiffon;
+    text-decoration: initial;
+}
+
+/*Shop Now button styling*/
+a.btn-primary, .btn-default, .btn-primary { background-color: mediumseagreen; font-size:1.5em;}
+a.btn-primary:hover, .btn-default:hover, .btn-primary:hover {
+     background-color: darkgreen;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a.btn-lg {
+    padding: 10px 16px;
+    font-size: 1.5em;
+}
+a.btn {
+    border-radius: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px outset buttonface;
+}
+a.btn, .btn {
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px outset buttonface;
+}
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.search-button {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    background-color: springgreen;
+    border: 3px solid green;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.create-button {
+    width: 450px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    background-color: springgreen;
+    border: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.filter-button {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    cursor: pointer;
+    border-radius: 12px;
+    box-sizing: border-box;
+ }
+
+.login-button {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Arial;
+    cursor: pointer;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    opacity: 0.6;
+}
+    .login-button:hover{
+        opacity:1;
+    }
+
+    hr {
+        display: none;
+    }
+
+.jumbotron {
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img { /*Image formating for product images*/
+    border-radius: 3px;
+    padding: 15px;
+    border-style:solid ;
+    box-shadow: 10px 10px black;
+}
+
+/*Table formating*/
+.large-text { 
+    font-family:Arial;
+    color:cornflowerblue;
+    font-size: 1.5em;
+    font:bold 12px;
+
+}
+
+
+.col-md-1 {width: 8.333333333333332%;}
+.col-md-2 {width: 16.666666666666664%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33333333333333%;}
+.col-md-5 {width: 41.66666666666667%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.333333333333336%;}
+.col-md-8 {width: 66.66666666666666%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33333333333334%;}
+.col-md-11 {width: 91.66666666666666%;}
+.col-md-12 {width: 100%;}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11 {
+    float: left;
+    padding-right: 5px;
+}
+.row:after, .form-group:after, .navbar:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/*Labels and Text box styling*/
+label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline-block;
+}
+.control-label {
+    text-align: right;
+}
+.search-form{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: palegoldenrod;
+    border: 3px solid green;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.order-form {
+    width: 170px;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    float:left;
+    display: inline;
+    background-color: palegoldenrod;
+    border: 3px solid green;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.form-control {
+    width: 450px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    background-color:palegoldenrod;
+    border: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.5em;
+
+}
+.dropdown-control {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color:white;
+    font-size:20px;
+    font-family:Arial;
+    background-color: darkslategrey;
+    border: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* To align save button with text box on category screen*/
+.col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+}
+.text-danger {
+    color: red;
+    font-weight: bold;
+    font-size:1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+dl {
+    width: 100%;
+    overflow: hidden;
+}
+dt {
+    float: left;
+    /* adjust the width; make sure the total of both is 100% */
+    width: 50%;
+    /*clear left ensure that if there is an empty dd then the elements do not wrap*/
+    clear: left;
+    font-weight: bold;
+    font-size:1.5em;
+    color:aquamarine;
+    font-family:Arial;
+}
+dd {
+    float: left;
+    /* adjust the width; make sure the total of both is 100% */
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: aquamarine;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+dt, dd {
+    line-height: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+td {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: turquoise;
+    font-weight: bold;
+    padding: 5px;
+    vertical-align: initial;
+    text-align: left;
+}
+.orders-table td {
+    border-bottom: 1px solid;
+    font-size:0.8em;
+}
+
+.orders-table a {
+    text-decoration: underline;
+}
+label {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: forestgreen;
+}
+.label-show {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: forestgreen;
+    font-weight: bold;
+}
+.bottom {
+    float: initial;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color:aquamarine;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-top: 20px;
+}
+.pagination li a {
+    margin-bottom: 20px;
+    margin-top:20px;
+    color: white;
+    float:initial;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    float:inherit;
+}
+.active a {
+     background-color: #4CAF50;
+     color: white;
+     border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+h2 + a, h2 + p > a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer {
+    margin-bottom: 20px;
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    height: 30px;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size:1em;
+    font-family:Arial;
+    font-weight:bold;
+}
+.navbar {
+    background-color: darkgreen;
+    border-radius: 5px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    font-size: 1.4em;
+    
+}
+.navbar-header {
+    float: left;
+    padding: 5px;
+    position: relative;
+}
+.navbar-left {
+    float: left;
+}
+.nav {
+    float: left;
+}
+.navbar a {
+    color: white;
+}
+.nav li, .navbar-form .form-group {
+    display: inline-block;
+}
+.navbar-toggle {
+    display: none;
+}
+.navbar-collapse {
+    position: relative;
+}
+
+.navbar-form {
+    position: absolute;
+    bottom: 40px;
+    left: 30%;
+}
+.navbar-form button {
+    padding: 5px 20px;
+    font-size: 1em;
+}
+a.navbar-brand {
+    color: paleturquoise;
+    position: absolute;
+    bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    letter-spacing: 5px;
+}
+.nav li a {
+    display: inline-block;
+    background-color: darkgreen;
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: 1px solid rgb(14, 117, 204);
+    max-width: 310px;
+   
+}
+.nav li a:hover {
+    background-color: forestgreen;
+    border: 1px solid green;
+    transform: scale(1.1);
+    text-decoration: none;
+    -moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+    -webkit-transition: ease-in .25s;
+     transition: ease-in .25s;
+}
